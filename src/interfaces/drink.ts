@@ -7,7 +7,7 @@ export interface IDrink {
     instructions: string;
     urlVideo: string;
 
-    incredients: string[]
+    ingredients: string[]
     measures: string[]
 
 }

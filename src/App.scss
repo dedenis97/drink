@@ -9,7 +9,6 @@
     position: relative;
     background: #25212994;
 
-
     .filters-wrapper {
         flex: 1;
         display: flex;
@@ -30,6 +29,7 @@
         flex: 5;
         display: flex;
         flex-wrap: wrap;
+        padding: 10px 20px;
     }
 
     .drink-wrapper {
@@ -38,17 +38,18 @@
         justify-content: center;
 
         width: 14rem;
-        margin: 15px;
+        margin: 7px;
         border: solid 1px#000;
         border-radius: $border-radius-size;
 
-        transition: all ease .2s;
+        transition: all ease-out .4s;
 
         &:hover {
             transform: scale(1.02);
-            filter: drop-shadow(5px, 5px, 5px, rgb(42, 31, 46));
+            
+            // filter: drop-shadow(5px, 5px, 5px, rgb(42, 31, 46));
 
-            .drink-card{
+            .drink-card {
                 filter: drop-shadow(2px 4px 6px black);
             }
 

@@ -51,6 +51,10 @@ export default function Homepage() {
       drinkListCopy = drinkListCopy.filter((x: IDrink) => !x.isAlcolic)
     }
 
+    if (filters.OrdinaryDrink) {
+      drinkListCopy = drinkListCopy.filter((x: IDrink) => x.category == "Ordinary Drink")
+    }
+
     updateDrinkView(drinkListCopy)
 
   }
@@ -59,6 +63,8 @@ export default function Homepage() {
     drinkService.getDrinksByName(value)
       .then(res => {
 
+        console.log(res);
+        
         if (res.length > 0) {
           setSearched(true)
         } else {

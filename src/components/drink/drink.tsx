@@ -14,7 +14,7 @@ export default function Drink() {
             return (
                 <>
                     <span className="chip">
-                        <label>{drink.incredients[index]}</label> - {mea}</span>
+                        <label>{drink.ingredients[index]}</label> - {mea}</span>
                 </>
             )
         }

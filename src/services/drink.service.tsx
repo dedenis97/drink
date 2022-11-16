@@ -59,7 +59,7 @@ export default class DrinkService {
 
         let drink: IDrink = adapt(obj, map)
 
-        drink.incredients = ingredients
+        drink.ingredients = ingredients
         drink.measures = measures
 
         drink.isAlcolic = obj.strAlcoholic == "Alcoholic"
