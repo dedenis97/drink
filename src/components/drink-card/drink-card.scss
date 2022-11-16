@@ -1,0 +1,88 @@
+@import '../../styles/variables.scss';
+
+
+.drink-card {
+    cursor: pointer;
+
+    position: relative;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+        width: 14rem;
+        height: auto;
+
+        border-radius: $border-radius-size;
+        transition: all .5s;
+        filter: saturate(1.08) contrast(1.05);
+    }
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: #251a30b0;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 13%;
+    margin: 5px 10px;
+    font-family: 'stylish';
+    font-size: 16px;
+
+    border-radius: 4px;
+
+    .labels {
+        display: flex;
+        flex-direction: column;
+        margin-left: -1rem;
+
+        .name {
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .category {
+            font-style: italic;
+            font-size: 90%;
+            color: #ddd
+        }
+    }
+
+}
+
+.icon-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #0f0f0f;
+    transform: rotate(90deg);
+
+    .font {
+        width: 0;
+        height: 0;
+        background: none;
+        border-width: 40px 40px 0 0;
+        border-style: solid;
+        border-color: #251a30b0 transparent transparent transparent;
+        position: relative;
+
+        .icon {
+            transform: rotate(-90deg);
+            position: absolute;
+            top: -38px;
+            right: -20px;
+            font-size: 16px;
+            color: #e1e1e1;
+        }
+
+    }
+
+}
